@@ -14,11 +14,21 @@ public class MainMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
-	
-	public void PlayGame ()
+
+    public void GoToMain()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+    public void GoToGame ()
 	{
 		SceneManager.LoadScene(1);
 	}
+
+    public void GoToScores()
+    {
+        SceneManager.LoadScene(2);
+    }
 }
