@@ -22,13 +22,18 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
-    public void GoToGame ()
-	{
-		SceneManager.LoadScene(1);
-	}
-
     public void GoToScores()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(1);
     }
+
+    public void GoToLevels ()
+	{
+		SceneManager.LoadScene(2);
+	}
+
+    public void GoToGame ()
+	{
+		SceneManager.LoadScene(3);
+	}
 }
