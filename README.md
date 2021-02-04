@@ -2,7 +2,7 @@
 
 # Blocktic App 1.0 README
 
-By [YOUR NAMES HERE]
+By David Betram, Aidan Leyden, Faraz Liaquat, Blair Harris, and Phillip Phan
 
 Easton Area High School
 
@@ -12,7 +12,7 @@ Easton, PA
 
   
 
-About RoverPass App Here....
+Blocktick is a 2D platform puzzle game. In each level, the player must strategically use the blocks at their disposal to find the most efficient way to get to the end of the level. The only twist is there are different types of blocks, each with their own special thing that makes them unique. 
 
   
 
@@ -22,7 +22,7 @@ About RoverPass App Here....
 
   
 
-- Designed for Android devices
+- Designed for PC/Mac
 
 
   
