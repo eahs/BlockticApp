@@ -7,8 +7,13 @@ public class GrabController : MonoBehaviour
     public Transform grabDetect;
     public Transform boxHolder;
     public float rayDist;
-
+    public BoxCollider2D BoxCollider;
     // Update is called once per frame
+    void Start()
+    {
+        BoxCollider.gameObject.GetComponent<BoxCollider2D>().enabled = false;
+        BoxCollider.gameObject.GetComponent<BoxCollider2D>().isTrigger = false;
+    }
     void Update()
     {
         RaycastHit2D grabCheck = Physics2D.Raycast(grabDetect.position, Vector2.right * transform.localScale, rayDist);
@@ -20,11 +25,13 @@ public class GrabController : MonoBehaviour
                 grabCheck.collider.gameObject.transform.parent = boxHolder;
                 grabCheck.collider.gameObject.transform.position = boxHolder.position;
                 grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
+                
             }
             else
             {
                 grabCheck.collider.gameObject.transform.parent = null;
                 grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = false;
+                
 
             }
         }
