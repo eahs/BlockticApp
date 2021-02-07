@@ -46,7 +46,7 @@ dlldata.c
 *_p.c
 *_i.h
 *.ilk
-*.meta
+#*.meta
 *.obj
 *.pch
 *.pdb
@@ -202,7 +202,7 @@ FakesAssemblies/
 /Source/[Uu]ser[Ss]ettings/
 
 
-/Source/[Aa]ssets/BayatGames
+#/Source/[Aa]ssets/BayatGames
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
