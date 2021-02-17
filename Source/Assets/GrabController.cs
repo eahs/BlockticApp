@@ -7,12 +7,11 @@ public class GrabController : MonoBehaviour
     public Transform grabDetect;
     public Transform boxHolder;
     public float rayDist;
-    public BoxCollider2D BoxCollider;
+    
     // Update is called once per frame
     void Start()
     {
-        BoxCollider.gameObject.GetComponent<BoxCollider2D>().enabled = false;
-        BoxCollider.gameObject.GetComponent<BoxCollider2D>().isTrigger = false;
+      
     }
     void Update()
     {
