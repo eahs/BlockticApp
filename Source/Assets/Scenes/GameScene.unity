@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 627501668}
   - component: {fileID: 627501670}
   - component: {fileID: 627501669}
+  - component: {fileID: 627501671}
   m_Layer: 5
   m_Name: GameData
   m_TagString: Untagged
@@ -199,6 +200,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 627501667}
   m_CullTransparentMesh: 0
+--- !u!114 &627501671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 627501667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b07bdce44805f8048bb99f43f2ae6096, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &654454973
 GameObject:
   m_ObjectHideFlags: 0
@@ -1186,6 +1199,7 @@ GameObject:
   - component: {fileID: 1223384244}
   - component: {fileID: 1223384243}
   - component: {fileID: 1223384242}
+  - component: {fileID: 1223384246}
   m_Layer: 0
   m_Name: Grass
   m_TagString: Grass
@@ -1304,6 +1318,18 @@ Transform:
   m_Father: {fileID: 1821481158}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1223384246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1223384241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b07bdce44805f8048bb99f43f2ae6096, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1251239091
 GameObject:
   m_ObjectHideFlags: 0
@@ -1402,7 +1428,7 @@ GameObject:
   - component: {fileID: 1268054161}
   m_Layer: 0
   m_Name: Button
-  m_TagString: Untagged
+  m_TagString: Grass
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1548,7 +1574,6 @@ GameObject:
   - component: {fileID: 1718207432}
   - component: {fileID: 1718207434}
   - component: {fileID: 1718207433}
-  - component: {fileID: 1718207435}
   m_Layer: 0
   m_Name: Tilemap
   m_TagString: Untagged
@@ -1845,18 +1870,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!114 &1718207435
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1718207431}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e30bc334a54418c4587a578cad280da0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1821481157
 GameObject:
   m_ObjectHideFlags: 0
@@ -1933,6 +1946,7 @@ GameObject:
   - component: {fileID: 1941027551}
   - component: {fileID: 1941027550}
   - component: {fileID: 1941027553}
+  - component: {fileID: 1941027554}
   m_Layer: 0
   m_Name: Grass
   m_TagString: Grass
@@ -2051,6 +2065,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2, y: 2}
   m_EdgeRadius: 0
+--- !u!114 &1941027554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1941027549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b07bdce44805f8048bb99f43f2ae6096, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2011600829
 GameObject:
   m_ObjectHideFlags: 0
