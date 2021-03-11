@@ -15,6 +15,9 @@ public class ButtonBlock : MonoBehaviour
 	public Vector3 location2=block.transform.position;*/
 	public double timer = 1;
 	public double distance=0;
+	
+    public delegate void ClickAction();
+    public static event ClickAction OnClicked;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,9 +28,13 @@ public class ButtonBlock : MonoBehaviour
     void Update()
     {
 		distance=Math.Sqrt(Math.Pow(player.transform.position.x-block.transform.position.x+3, 2f) + Math.Pow(player.transform.position.y-block.transform.position.y, 2f));
-		if (Input.GetButtonDown("Interact") && 8>distance){
+		if (Input.GetButtonDown("Interact") && 10>distance){
 			spriteRenderer.sprite=activeSprite;
 			timer=0.2;
+			GetComponent<Rigidbody2D>().gravityScale *= -1;
+            if(OnClicked != null)
+                OnClicked();
+			Debug.Log(OnClicked);
 		}else{
 			if(timer>0){
 				timer-=Time.deltaTime;
@@ -37,3 +44,12 @@ public class ButtonBlock : MonoBehaviour
 		}
     }
 }
+
+    /*void OnGUI()
+    {
+        if(GUI.Button(new Rect(Screen.width / 2 - 50, 5, 100, 30), "Click"))
+        {
+            if(OnClicked != null)
+                OnClicked();
+        }
+    }*/
