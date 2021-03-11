@@ -34,6 +34,7 @@ public class ButtonBlock : MonoBehaviour
 			GetComponent<Rigidbody2D>().gravityScale *= -1;
             if(OnClicked != null)
                 OnClicked();
+			Debug.Log(OnClicked);
 		}else{
 			if(timer>0){
 				timer-=Time.deltaTime;
