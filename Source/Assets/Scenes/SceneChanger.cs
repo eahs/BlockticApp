@@ -36,4 +36,15 @@ public class SceneChanger : MonoBehaviour
 	{
 		SceneManager.LoadScene(3);
 	}
+	
+	public void GoToLVL1 ()
+	{
+		SceneManager.LoadScene(4);
+	}
+	
+	public void GoToLVL2 ()
+	{
+		SceneManager.LoadScene(5);
+	}
+	
 }
