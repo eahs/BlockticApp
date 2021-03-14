@@ -21,7 +21,9 @@ public class killzone : MonoBehaviour
     {
         if(coll.gameObject.tag == "Player")
         {
-            UnityEngine.SceneManagement.SceneManager.LoadScene("GameScene");
+            Scene currentScene = SceneManager.GetActiveScene();
+            string scene = currentScene.name;
+            UnityEngine.SceneManagement.SceneManager.LoadScene(scene);
         }
     }
 }
