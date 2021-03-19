@@ -31,20 +31,25 @@ public class SceneChanger : MonoBehaviour
 	{
 		SceneManager.LoadScene(2);
 	}
-
-    public void GoToGame ()
+	
+	public void GoToLVL1 ()
 	{
 		SceneManager.LoadScene(3);
 	}
 	
-	public void GoToLVL1 ()
+	public void GoToLVL2 ()
 	{
 		SceneManager.LoadScene(4);
 	}
 	
-	public void GoToLVL2 ()
+	public void GoToLVL3 ()
 	{
 		SceneManager.LoadScene(5);
 	}
 	
+	
+	public void GoToTut ()
+	{
+		SceneManager.LoadScene(6);
+	}
 }
