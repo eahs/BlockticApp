@@ -7,7 +7,7 @@ public class GrabController : MonoBehaviour
     public Transform grabDetect;
     public Transform boxHolder;
     public float rayDist;
-    
+    public float throwforce;
     // Update is called once per frame
     void Start()
     {
@@ -25,6 +25,12 @@ public class GrabController : MonoBehaviour
                 grabCheck.collider.gameObject.transform.position = boxHolder.position;
                 grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
                 
+            }
+            else if(Input.GetKey(KeyCode.F))
+            {
+                grabCheck.collider.gameObject.transform.parent = null;
+                grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = false;
+                grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(transform.localScale.x, 6) * throwforce;
             }
             else
             {

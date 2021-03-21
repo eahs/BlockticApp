@@ -737,6 +737,7 @@ MonoBehaviour:
   grabDetect: {fileID: 2011600830}
   boxHolder: {fileID: 1083039099}
   rayDist: 0
+  throwforce: 1.1
 --- !u!114 &827867195
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1666,7 +1667,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1

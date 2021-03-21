@@ -663,6 +663,7 @@ MonoBehaviour:
   grabDetect: {fileID: 2011600830}
   boxHolder: {fileID: 1083039099}
   rayDist: 0
+  throwforce: 1.1
 --- !u!114 &827867195
 MonoBehaviour:
   m_ObjectHideFlags: 0
