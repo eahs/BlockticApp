@@ -11,13 +11,13 @@ public class FlipG : MonoBehaviour
     {
         
 		ButtonBlock.OnClicked += flip;
-		Debug.Log("init");
+		//Debug.Log("init");
     }
 	
 	void onEnable()
 	{
 		ButtonBlock.OnClicked += flip;
-		Debug.Log("init");
+		//Debug.Log("init");
 	}
 
 	void onDisable()
