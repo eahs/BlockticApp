@@ -6,8 +6,8 @@ using UnityEngine.UI;
 
 public class Score : MonoBehaviour
 {
-	double value=10000;
-	double pastValue=10000;
+	double value=0;
+	double pastValue=0;
 	
 	public Text TextObject;
 	
@@ -20,11 +20,11 @@ public class Score : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (value>0 && value < Convert.ToInt32(pastValue+1))
+        if (value > Convert.ToInt32(pastValue+1))
         {
 			pastValue=value;
-			TextObject.text=string.Format("Score: {0}", Convert.ToInt32(value));
+			TextObject.text=string.Format("Time: {0}", Convert.ToInt32(value));
         }
-        value -= Time.deltaTime*10;
+        value += Time.deltaTime*10;
     }
 }
