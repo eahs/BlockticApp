@@ -324,7 +324,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 913173536}
         m_MethodName: GoToLevels
         m_Mode: 1
         m_Arguments:
