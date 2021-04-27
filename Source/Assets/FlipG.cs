@@ -6,6 +6,7 @@ public class FlipG : MonoBehaviour
 {
 	// Start is called before the first frame update
 	private bool m_FacingRight = true;
+	
 	void Start()
     {
         
@@ -29,19 +30,21 @@ public class FlipG : MonoBehaviour
     {
 
     }
-	
 	void flip()
 	{
-		GetComponent<Rigidbody2D>().gravityScale *= -1;
-		if (GetComponent<Rigidbody2D>().gravityScale <= -1)
-		{
-			m_FacingRight = false;
-			transform.localRotation = Quaternion.Euler(180, 0, 0);
-		}
-		else
-		{
-			m_FacingRight = true;
-			transform.localRotation = Quaternion.Euler(0, 0, 0);
-		}
+			GetComponent<Rigidbody2D>().gravityScale *= -1;
+			if (GetComponent<Rigidbody2D>().gravityScale <= -1)
+			{
+
+				m_FacingRight = false;
+				transform.localRotation = Quaternion.Euler(180, 0, 0);
+			}
+			else
+			{
+				m_FacingRight = true;
+				transform.localRotation = Quaternion.Euler(0, 0, 0);
+			}
+		
 	}
 }
+
