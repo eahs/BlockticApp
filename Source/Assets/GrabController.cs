@@ -24,13 +24,22 @@ public class GrabController : MonoBehaviour
                 grabCheck.collider.gameObject.transform.parent = boxHolder;
                 grabCheck.collider.gameObject.transform.position = boxHolder.position;
                 grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
-                
+
             }
-            else if(Input.GetKey(KeyCode.F))
+            else if (Input.GetKey(KeyCode.F))
             {
+                if (GetComponent<Rigidbody2D>().gravityScale <= -1)
+                {
+                    grabCheck.collider.gameObject.transform.parent = null;
+                    grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = false;
+                    grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(transform.localScale.x, -6) * throwforce;
+                }
+                else
+                { 
                 grabCheck.collider.gameObject.transform.parent = null;
                 grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = false;
                 grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(transform.localScale.x, 6) * throwforce;
+                }
             }
             else
             {
